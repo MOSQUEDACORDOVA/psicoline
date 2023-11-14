@@ -14774,7 +14774,7 @@ button.swiper-pagination-bullet {
 .tabs-custom .nav-link.active {
   cursor: default;
   border: 0;
-  color: #fff !important;
+  color: #de5a2f !important;
 }
 
 .tab-content > .tab-pane {
