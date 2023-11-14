@@ -14774,7 +14774,7 @@ button.swiper-pagination-bullet {
 .tabs-custom .nav-link.active {
   cursor: default;
   border: 0;
-  color: #de5a2f;
+  color: #fff !important;
 }
 
 .tab-content > .tab-pane {
@@ -14808,24 +14808,24 @@ button.swiper-pagination-bullet {
 @media (max-width: 767.98px) {
   .tabs-line .nav-tabs {
     max-width: 100%;
-    border: 1px solid #f7f9f9;
+    border: 1px solid #de5a2f;
   }
   .tabs-line .nav-item {
     margin: -1px;
   }
   .tabs-line .nav-link {
     padding: 7px 10px;
-    color: rgba(49, 49, 49, 0.75);
+    color: #fff;
     background: transparent;
   }
   .tabs-line .nav-item + .nav-item .nav-link {
-    border-top: 1px solid #f7f9f9;
+    border-top: 1px solid #de5a2f;
   }
   .tabs-line .nav-link:hover,
   .tabs-line .nav-link.active {
     color: #fff;
-    background: #3070ae;
-    border-color: #3070ae;
+    background: #de5a2f;
+    border-color: #de5a2f;
   }
 }
 
@@ -14850,7 +14850,7 @@ button.swiper-pagination-bullet {
   line-height: 1.4;
   color: rgba(49, 49, 49, 0.75);
   background: transparent;
-  border-bottom: 1px solid #e5e7e9;
+  /* border-bottom: 1px solid #e5e7e9; */
   text-align: center;
   vertical-align: middle;
 }
@@ -14863,7 +14863,7 @@ button.swiper-pagination-bullet {
 .tabs-corporate .nav-link.active {
   color: #fff;
   background: #3070ae;
-  border-color: #3070ae;
+  /* border-color: #3070ae; */
 }
 
 .tabs-corporate .tab-content {
@@ -14902,7 +14902,7 @@ button.swiper-pagination-bullet {
     min-width: 130px;
     letter-spacing: 0.1em;
     padding: 13px 20px;
-    border: 2px solid #e5e7e9;
+    /* border: 2px solid #e5e7e9; */
   }
   .tabs-horizontal.tabs-corporate .nav-link,
   .tabs-horizontal.tabs-corporate .nav-link::before {
@@ -14925,7 +14925,7 @@ button.swiper-pagination-bullet {
   .tabs-horizontal.tabs-corporate .nav-link.active,
   .tabs-horizontal.tabs-corporate .nav-link:hover {
     color: #fff;
-    border-color: #3070ae;
+    /* border-color: #3070ae; */
     background-color: transparent;
   }
   .tabs-horizontal.tabs-corporate .nav-link.active::before,
