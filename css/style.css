@@ -95,7 +95,8 @@ html p a:hover {
 * Typography
 */
 body {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: 'Rubik', sans-serif;
   font-size: 14px;
   line-height: 1.7;
   font-weight: 400;
@@ -223,7 +224,7 @@ h1,
 
 h2,
 .heading-2 {
-  font-family: "Libre Baskerville", serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 300;
   font-size: 28px;
   line-height: 1.4;
@@ -423,7 +424,7 @@ code {
 }
 
 .text-large {
-  font-family: "Libre Baskerville", serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 30px;
   font-weight: 500;
   letter-spacing: 0;
@@ -558,7 +559,7 @@ html .page .text-primary {
 }
 
 .font-sec {
-  font-family: "Libre Baskerville", serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 .big-text {
@@ -583,12 +584,14 @@ html .page .text-primary {
 *
 * Typography
 */
-body {
-  font-family: "Open Sans", sans-serif;
+body, html{
+  font-family: "Muli";
+  font-weight: normal;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.7;
-  font-weight: 400;
-  color: rgba(49, 49, 49, 0.75);
+  font-weight: 500;
+  color: rgba(32, 32, 32);
   background-color: #fff;
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -602,13 +605,22 @@ body {
   }
 }
 
-h1,
+h1{
+  font-family: "Rubik";
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 h2,
 h3,
 h4,
 h5,
 h6,
 [class^="heading-"] {
+  font-family: "Nunito Sans";
+  font-weight: 700;
+  font-style: normal;
   margin-top: 0;
   margin-bottom: 0;
   color: #313131;
@@ -712,7 +724,7 @@ h1,
 
 h2,
 .heading-2 {
-  font-family: "Libre Baskerville", serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 300;
   font-size: 28px;
   line-height: 1.4;
@@ -912,7 +924,7 @@ code {
 }
 
 .text-large {
-  font-family: "Libre Baskerville", serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 30px;
   font-weight: 500;
   letter-spacing: 0;
@@ -1046,7 +1058,7 @@ html .page .text-primary {
 }
 
 .font-sec {
-  font-family: "Libre Baskerville", serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 .big-text {
@@ -1252,7 +1264,7 @@ a.link-custom {
   min-width: 26px;
   font-size: 24px;
   line-height: 1;
-  color: #3070ae;
+  color: #de5a2f;
 }
 
 .box-minimal-icon.fl-bigmug-line-checkmark14 {
@@ -1264,6 +1276,10 @@ a.link-custom {
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.box-minimal-title {
+  color: #de5a2f;
 }
 
 * + .box-minimal {
@@ -1402,12 +1418,12 @@ a.link-custom {
   justify-content: center;
   width: 2.8em;
   height: 2.8em;
-  border: 2px solid #de5a2f2e;
+  border: 2px solid #206169;
   border-radius: 50%;
   font-size: 24px;
   line-height: 1;
   color: #de5a2f;
-  background: #de5a2f2e;
+  /* background: #de5a2f2e; */
   transition: 0.3s all ease;
 }
 
@@ -2155,7 +2171,7 @@ html .list-inline-md > * {
   content: "\f14f";
   font: 400 14px "Material Design Icons";
   line-height: inherit;
-  color: #aeb1be;
+  color: #de5a2f;
   pointer-events: none;
 }
 
@@ -2711,7 +2727,8 @@ hr {
   line-height: 1.25;
   border: 2px solid;
   border-radius: 0;
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: 'Rubik', sans-serif;
   font-weight: 400;
   letter-spacing: none;
   text-transform: none;
@@ -2764,6 +2781,20 @@ html .button.button-primary-lighten:focus {
   border-color: #97cde9;
 }
 
+html .button.button-primary-lighten:hover,
+html .button.button-primary-lighten:active {
+  color: #fff;
+  background-color: #3070ae;
+  border-color: #3070ae;
+}
+/** COlor de paleta**/
+html .button.button-primary-lighten,
+html .button.button-primary-lighten:focus {
+  color: #fff;
+  background-color: #de5a2f;
+  border-color: #de5a2f;
+}
+/** COlor de paleta**/
 html .button.button-primary-lighten:hover,
 html .button.button-primary-lighten:active {
   color: #fff;
@@ -2973,7 +3004,8 @@ html .button.button-icon {
 
 .btn-primary {
   border-radius: 3px;
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: 'Rubik', sans-serif;
   font-weight: 400;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -5869,7 +5901,7 @@ html:not(.tablet):not(.mobile)
   padding: 10px 10px;
   border: 0;
   border-radius: 6px;
-  font-family: "Libre Baskerville", serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.71429;
@@ -6691,7 +6723,7 @@ html:not(.tablet):not(.mobile) .profile-classic-caption {
 }
 
 .profile-creative-title {
-  color: #3070ae;
+  color: #de5a2f;
 }
 
 .profile-creative-title a:hover {
@@ -7191,7 +7223,7 @@ html:not(.tablet):not(.mobile) .profile-minimal-caption {
 }
 
 .counter-minimal-main {
-  font-family: "Libre Baskerville", serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 36px;
   font-weight: 500;
   line-height: 1.2;
@@ -7512,7 +7544,7 @@ html:not(.tablet):not(.mobile) .profile-minimal-caption {
 }
 
 .timeline-classic-item-title {
-  font-family: "Libre Baskerville", serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 24px;
   line-height: 1.2;
   font-weight: 300;
@@ -8006,11 +8038,11 @@ html:not(.tablet):not(.mobile) .profile-minimal-caption {
   .decorative-box::before {
     content: "";
     position: absolute;
-    top: 34px;
-    right: 80px;
-    width: 356px;
-    height: 700px;
-    background: rgba(255, 255, 255, 0.53);
+    top: 24px;
+    right: 50px;
+    width: 500px;
+    height: 800px;
+    background: rgba(255, 255, 255, 0.83);
     z-index: -1;
   }
 }
@@ -10128,7 +10160,7 @@ html:not(.lt-ie10) .not-animated {
 
 .ui-to-top:hover {
   color: #fff;
-  background: #97cde9;
+  background: #de5a2f;
   text-decoration: none;
 }
 
@@ -10213,7 +10245,8 @@ html.tablet .ui-to-top {
 .rd-nav-link {
   font-size: 22px;
   line-height: 1em;
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: 'Rubik', sans-serif;
   font-weight: 400;
 }
 
@@ -12345,7 +12378,7 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .rd-navbar-corporate.rd-navbar-static .rd-navbar-main-outer {
-  background: #f7f9f9;
+  background: #97cde9;
 }
 
 .rd-navbar-corporate.rd-navbar-static .rd-navbar-main {
@@ -13014,7 +13047,7 @@ button.swiper-pagination-bullet {
 
 .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #007aff;
+  background: #de5a2f;
 }
 
 .swiper-container-vertical > .swiper-pagination-bullets {
@@ -13543,7 +13576,7 @@ button.swiper-pagination-bullet {
   z-index: -1;
   left: -10px;
   display: block;
-  background: #97cde9;
+  background: #de5a2f;
   transition: 0.4s ease-in-out;
 }
 
@@ -13553,7 +13586,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-pagination.swiper-pagination-modern .swiper-pagination-bullet-active {
-  color: inherit;
+  color: #fff;
 }
 
 .swiper-pagination.swiper-pagination-modern
@@ -14120,7 +14153,7 @@ button.swiper-pagination-bullet {
 .rd-search-results-live .search-quick-result {
   padding-left: 15px;
   padding-right: 15px;
-  font-family: "Libre Baskerville", serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -14180,7 +14213,8 @@ button.swiper-pagination-bullet {
   margin: 0;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: 'Rubik', sans-serif;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: none;
@@ -14740,6 +14774,7 @@ button.swiper-pagination-bullet {
 .tabs-custom .nav-link.active {
   cursor: default;
   border: 0;
+  color: #de5a2f;
 }
 
 .tab-content > .tab-pane {
@@ -15082,13 +15117,13 @@ button.swiper-pagination-bullet {
   font-size: 17px;
   line-height: 1.5;
   letter-spacing: 0;
-  color: #313131;
+  color: #de5a2f;
   transition: 1.3s all ease;
 }
 
 .card-corporate .card-title a[aria-expanded="true"],
 .card-corporate .card-title a:hover {
-  color: #3070ae;
+  color: #de5a2f;
 }
 
 .card-corporate .card-title a .card-arrow {
@@ -15096,7 +15131,7 @@ button.swiper-pagination-bullet {
 }
 
 .card-corporate .card-title a.collapsed {
-  color: #313131;
+  color: #de5a2f;
   border-bottom-width: 0;
 }
 
@@ -15393,7 +15428,8 @@ button.swiper-pagination-bullet {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: 'Rubik', sans-serif;
   font-size: 14px !important;
   line-height: 1.2 !important;
   color: #868e96;
@@ -18817,7 +18853,8 @@ body:not(.lg-from-hash)
 }
 
 .c3 text {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: 'Rubik', sans-serif;
   font-size: 16px;
   fill: #9b9b9b;
   user-select: none;
