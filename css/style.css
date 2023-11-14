@@ -1143,11 +1143,11 @@ a.link-custom {
 .link-default-2,
 .link-default-2:active,
 .link-default-2:focus {
-  color: #313131;
+  color: #000;
 }
 
 .link-default-2:hover {
-  color: #97cde9;
+  color: #de5a2f;
 }
 
 .link-default-light,
@@ -1157,7 +1157,7 @@ a.link-custom {
 }
 
 .link-default-light:hover {
-  color: #97cde9;
+  color: #de5a2f;
 }
 
 .context-dark .link-default,
@@ -1194,7 +1194,7 @@ a.link-custom {
 }
 
 .privacy-link:hover {
-  color: #97cde9;
+  color: #de5a2f;
 }
 
 * + .privacy-link {
