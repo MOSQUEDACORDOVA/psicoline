@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Rubik:regular|Nunito+Sans:700|Muli:regular" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.31/dist/sweetalert2.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css" id="main-styles-link">
@@ -527,7 +528,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-sm-10 col-lg-7">
-            <h3>Agenda tu cita!</h3>
+            <h3>¡Agenda tu cita!</h3>
             <h6 class="wow-outer offset-top-3 opacity-75"><span class="wow slideInDown" data-wow-delay=".05s">Solicite
                 una consulta para obtener apoyo psicológico y asesoramiento especializado.</span></h6>
             <div class="wow-outer button-outer button-outer-2"><a
@@ -553,35 +554,35 @@
                       <div class="form-wrap wow fadeSlideInUp">
                         <label class="form-label-outside" for="contact-first-name">Nombres</label>
                         <input class="form-input" id="contact-first-name" type="text" name="name"
-                          data-constraints="@Required">
+                          data-constraints="@Required" required>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-wrap wow fadeSlideInUp">
                         <label class="form-label-outside" for="contact-last-name">Apellidos</label>
-                        <input class="form-input" id="contact-last-name" type="text" name="name"
-                          data-constraints="@Required">
+                        <input class="form-input" id="contact-last-name" type="text" name="lastname"
+                          data-constraints="@Required" required>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-wrap wow fadeSlideInUp">
                         <label class="form-label-outside" for="contact-email">E-mail</label>
                         <input class="form-input" id="contact-email" type="email" name="email"
-                          data-constraints="@Email @Required">
+                          data-constraints="@Email @Required" required>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-wrap wow fadeSlideInUp">
                         <label class="form-label-outside" for="contact-phone">Teléfono</label>
                         <input class="form-input" id="contact-phone" type="text" name="phone"
-                          data-constraints="@PhoneNumber">
+                          data-constraints="@PhoneNumber" required>
                       </div>
                     </div>
                     <div class="col-12">
                       <div class="form-wrap wow fadeSlideInUp">
                         <label class="form-label-outside" for="contact-message">Mensaje</label>
                         <textarea class="form-input" id="contact-message" name="message"
-                          data-constraints="@Required"></textarea>
+                          data-constraints="@Required" required></textarea>
                       </div>
                     </div>
                   </div>
@@ -591,7 +592,7 @@
                         class="button button-lg button-lg--bigger button-primary-lighten button-winona wow slideInRight"
                         type="submit">Enviar Mensaje</button>
                     </div>
-                    <p>ó atrávez de </p>
+                    <p>ó a tráves de </p>
                     <div class="wow-outer button-winona"><a
                         class="icon mdi mdi-whatsapp text-color-6 icon-xl wow slideInLeft" target="_blank"
                         href="https://api.whatsapp.com/send?phone=+51951280936&text=Buen%20día,%20me%20gustaría%20tener%20más%20información%20sobre%20sus%20servicios%20psicologícos."></a>
@@ -670,8 +671,7 @@
             <!-- Rights-->
             <p class="rights"><span>&copy;&nbsp;</span><span
                 class="copyright-year"></span><span>&nbsp;</span><span>Todos los
-                derechos reservados.</span><br class="d-sm-none"><span>&nbsp;</span><a
-                href="privacy-policy.html">Politicas de Privacidad</a></p>
+                derechos reservados.</span><br class="d-sm-none"><span>&nbsp;</span></p>
           </div>
         </div>
       </div>
@@ -691,8 +691,36 @@
   <div class="snackbars" id="form-output-global"></div>
   <!-- Javascript-->
   <script src="js/core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.31/dist/sweetalert2.all.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/mail.js" type></script>
+  <script>
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 4000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    })
+    let cita  = localStorage.getItem('contacto');
+    if (cita=='true') {
+        Toast.fire({
+            icon: 'success',
+            title: 'Mensaje enviado Exitósamente'
+        })
+        localStorage.removeItem('contacto');
+    }
+    if (cita=='false') {
+        Toast.fire({
+            icon: 'danger',
+            title: 'Oops, Ha ocurrido un error al enviar su mensaje!!'
+        })
+        localStorage.removeItem('contacto');
+    }
+  </script>
 </body>
 
 </html>

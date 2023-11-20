@@ -14823,7 +14823,7 @@ button.swiper-pagination-bullet {
   }
   .tabs-line .nav-link:hover,
   .tabs-line .nav-link.active {
-    color: #fff;
+    color: #fff !important;
     background: #de5a2f;
     border-color: #de5a2f;
   }
