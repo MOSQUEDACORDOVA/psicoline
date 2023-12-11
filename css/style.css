@@ -1404,7 +1404,7 @@ a.link-custom {
 	}*/
 }
 
-.box-creative-shadow .box-creative-icon {
+.box-creative-shadow .box-creative-icon  .box-creative-img{
   background: #fff;
   border: 0;
   box-shadow: 0 17px 24px 0 rgba(0, 0, 0, 0.05);
@@ -1456,6 +1456,20 @@ a.link-custom {
   border-color: #fff;
   color: #de5a2f;
   box-shadow: 0 17px 24px 0 rgba(0, 0, 0, 0.05);
+  transition: 0.3s all ease;
+}
+
+.box-creative-img {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 12.5em;
+  border-radius: 5%;
+  font-size: 24px;
+  line-height: 1;
+  /* background: #de5a2f2e; */
   transition: 0.3s all ease;
 }
 
@@ -10391,6 +10405,12 @@ html.tablet .ui-to-top {
 }
 
 @media (max-width: 768px) {
+  .rd-navbar-brand .logo{
+    width: 50px;
+  }
+}
+
+@media (max-width: 780px) {
   .rd-navbar-brand .logo{
     width: 50px;
   }
